@@ -1,0 +1,3 @@
+[2024-03-12T10:00:05.190+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_cron_expression_v3.task1 scheduled__2024-03-05T09:50:00+00:00 [None]>
+[2024-03-12T10:00:05.219+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_cron_expression_v3.task1 scheduled__2024-03-05T09:50:00+00:00 [None]>
+[2024-03-12T10:00:05.222+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 6

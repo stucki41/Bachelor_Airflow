@@ -1,0 +1,26 @@
+[2024-03-12T14:26:43.203+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_python_dependencies_v03.get_sklearn scheduled__2021-10-23T00:00:00+00:00 [queued]>
+[2024-03-12T14:26:43.355+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_python_dependencies_v03.get_sklearn scheduled__2021-10-23T00:00:00+00:00 [queued]>
+[2024-03-12T14:26:43.360+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-12T14:26:43.881+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): get_sklearn> on 2021-10-23 00:00:00+00:00
+[2024-03-12T14:26:43.971+0000] {standard_task_runner.py:60} INFO - Started process 16234 to run task
+[2024-03-12T14:26:44.001+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_with_python_dependencies_v03', 'get_sklearn', 'scheduled__2021-10-23T00:00:00+00:00', '--job-id', '934', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_python_dependencies.py', '--cfg-path', '/tmp/tmprctqa_9e']
+[2024-03-12T14:26:44.017+0000] {standard_task_runner.py:88} INFO - Job 934: Subtask get_sklearn
+[2024-03-12T14:26:44.587+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_with_python_dependencies_v03.get_sklearn scheduled__2021-10-23T00:00:00+00:00 [running]> on host 26e63b1d0d39
+[2024-03-12T14:26:45.635+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Daniel' AIRFLOW_CTX_DAG_ID='dag_with_python_dependencies_v03' AIRFLOW_CTX_TASK_ID='get_sklearn' AIRFLOW_CTX_EXECUTION_DATE='2021-10-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-10-23T00:00:00+00:00'
+[2024-03-12T14:26:45.669+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_with_python_dependencies.py", line 15, in get_sklearn
+    import sklearn
+ModuleNotFoundError: No module named 'sklearn'
+[2024-03-12T14:26:45.773+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=dag_with_python_dependencies_v03, task_id=get_sklearn, execution_date=20211023T000000, start_date=20240312T142643, end_date=20240312T142645
+[2024-03-12T14:26:45.871+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 934 for task get_sklearn (No module named 'sklearn'; 16234)
+[2024-03-12T14:26:46.070+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-12T14:26:46.229+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

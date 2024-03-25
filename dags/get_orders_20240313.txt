@@ -1,0 +1,489 @@
+order_id,date,product_name,quantity
+180-11-0541,2022-03-30,"Apple - Delicious, Golden",67
+146-85-9195,2022-04-09,"Wine - White, Schroder And Schyl",69
+544-02-3061,2022-03-29,Eggplant Italian,97
+538-63-6447,2022-04-25,"Wine - Harrow Estates, Vidal",99
+336-29-0976,2022-06-15,"Thyme - Lemon, Fresh",78
+293-14-5062,2022-05-12,Beef Ground Medium,63
+758-09-1655,2022-06-01,Wine - Rosso Del Veronese Igt,82
+246-23-3390,2022-03-22,Chicken Breast Halal,87
+644-36-2279,2022-06-28,Kellogs All Bran Bars,54
+247-68-9333,2022-05-20,"Carrots - Purple, Organic",51
+339-76-1106,2022-03-22,Sorrel - Fresh,67
+479-63-9949,2022-05-23,"Chestnuts - Whole,canned",72
+407-52-8033,2022-06-16,Wine - Fume Blanc Fetzer,67
+153-82-5012,2022-06-05,Wine - Coteaux Du Tricastin Ac,72
+522-59-9921,2022-04-04,"Pork - Back, Short Cut, Boneless",88
+610-04-7995,2022-04-17,Buffalo - Striploin,80
+608-70-6652,2022-05-22,Shiro Miso,73
+343-87-0073,2022-06-03,Vinegar - Champagne,79
+689-79-8179,2022-05-03,"Loaf Pan - 2 Lb, Foil",52
+830-16-8008,2022-06-06,Longos - Lasagna Beef,66
+127-59-8909,2022-05-25,"Nut - Pecan, Halves",58
+717-96-2034,2022-06-09,Lettuce - Iceberg,59
+874-84-1326,2022-06-06,Lettuce - Baby Salad Greens,53
+562-78-1964,2022-06-17,"Tomatoes - Plum, Canned",52
+851-39-0108,2022-04-20,Skirt - 29 Foot,84
+742-91-8198,2022-04-10,Salmon - Sockeye Raw,73
+645-17-0921,2022-06-18,"Sauce - Soya, Light",61
+389-74-9918,2022-06-19,Wine - Cabernet Sauvignon,73
+154-20-7699,2022-03-12,Ecolab - Hand Soap Form Antibac,61
+159-08-5584,2022-03-01,Bamboo Shoots - Sliced,59
+215-94-1071,2022-05-13,Lobster - Cooked,74
+805-61-9059,2022-05-29,Wine - Crozes Hermitage E.,89
+617-82-0694,2022-05-17,Bagelers,52
+882-65-5329,2022-06-01,Hummus - Spread,66
+638-54-2746,2022-04-02,Containter - 3oz Microwave Rect.,51
+716-21-5640,2022-03-26,Container - Clear 16 Oz,65
+273-02-4981,2022-06-26,Madeira,73
+415-56-7196,2022-03-31,Rice - Sushi,90
+616-90-8881,2022-04-16,Veal Inside - Provimi,86
+232-22-6992,2022-05-05,"Bread - Dark Rye, Loaf",71
+129-79-0434,2022-04-21,Daikon Radish,61
+729-80-7796,2022-03-27,Cake - Sheet Strawberry,91
+232-30-1483,2022-03-12,Initation Crab Meat,75
+865-98-0710,2022-04-10,Corn Syrup,59
+324-31-2633,2022-05-25,Soup - Campbellschix Stew,99
+605-09-5596,2022-06-08,Bagel - Everything Presliced,54
+264-83-6090,2022-04-09,Pastry - Apple Large,52
+357-50-6604,2022-06-01,Papadam,84
+117-40-3307,2022-05-04,Pork - Caul Fat,68
+160-22-5376,2022-03-11,Marjoram - Fresh,65
+601-63-5142,2022-06-17,Snapple - Mango Maddness,100
+752-64-1072,2022-04-09,Towel - Roll White,66
+380-89-1099,2022-06-12,Tamarillo,88
+533-03-3450,2022-05-29,"Lettuce - Romaine, Heart",80
+315-30-5348,2022-05-16,Red Pepper Paste,84
+524-98-0993,2022-06-22,Oats Large Flake,52
+208-47-6020,2022-05-03,Island Oasis - Peach Daiquiri,92
+258-73-4976,2022-05-23,Sauce - Cranberry,81
+509-39-0545,2022-03-21,Cup - 8oz Coffee Perforated,93
+493-29-4091,2022-06-02,Cakes Assorted,64
+850-65-4623,2022-05-09,Soup - Chicken And Wild Rice,87
+124-27-8683,2022-05-05,Eggplant Italian,53
+661-07-6445,2022-05-19,Ketchup - Tomato,85
+667-83-2491,2022-06-02,Lemon Tarts,85
+544-55-3597,2022-06-02,Snails - Large Canned,51
+129-56-9423,2022-04-15,Tomato - Plum With Basil,81
+712-94-3659,2022-06-26,"Liqueur Banana, Ramazzotti",65
+188-65-1641,2022-05-20,Cake - Lemon Chiffon,88
+713-50-4824,2022-06-13,Cafe Royale,78
+514-35-4892,2022-06-10,Yams,56
+681-55-4502,2022-06-22,Wine - Casablanca Valley,71
+124-44-2929,2022-03-25,"Vinegar - Balsamic, White",93
+745-41-6682,2022-06-15,Cheese - Gouda,99
+516-58-6853,2022-06-12,Vaccum Bag - 14x20,52
+428-13-9969,2022-04-07,"Crab - Claws, 26 - 30",86
+145-52-8495,2022-04-14,"Liqueur Banana, Ramazzotti",54
+437-28-2044,2022-03-17,Sterno - Chafing Dish Fuel,71
+203-48-7401,2022-05-17,Chicken - Livers,56
+129-78-3392,2022-04-11,"Iced Tea - Lemon, 460 Ml",64
+373-05-6309,2022-04-20,Appetizer - Southwestern,83
+456-20-4513,2022-05-02,Mace Ground,57
+206-73-4495,2022-03-12,Longos - Grilled Salmon With Bbq,71
+470-25-9043,2022-04-22,Table Cloth 144x90 White,57
+174-14-9070,2022-06-21,Berry Brulee,91
+620-79-6875,2022-03-15,Mushroom - Lg - Cello,74
+855-04-8696,2022-05-24,Nectarines,71
+387-80-5696,2022-03-20,Mousse - Mango,72
+619-69-6281,2022-05-05,Pork - Ground,81
+484-19-6698,2022-06-16,Pickles - Gherkins,94
+301-25-4595,2022-05-30,Foam Tray S2,57
+811-99-5026,2022-06-21,Dill Weed - Dry,86
+830-24-5501,2022-03-19,Rice - Aborio,74
+569-76-5286,2022-06-23,"Mushroom - Enoki, Dry",100
+856-63-2003,2022-03-07,Hagen Daza - Dk Choocolate,63
+878-63-9626,2022-05-27,Wine - Chardonnay Mondavi,74
+183-62-8275,2022-06-28,Butter - Pod,73
+514-95-9395,2022-03-12,Mushroom - Portebello,72
+470-46-4774,2022-03-27,Cake - Mini Cheesecake,60
+731-53-3246,2022-04-18,Beef - Cow Feet Split,59
+607-36-2580,2022-05-09,Spice - Onion Powder Granulated,93
+546-85-1476,2022-06-26,Mountain Dew,88
+317-56-9103,2022-03-16,Pie Shells 10,99
+496-86-7826,2022-05-13,Beer - Steamwhistle,77
+740-76-0995,2022-04-03,"Potatoes - Yukon Gold, 80 Ct",75
+152-67-5667,2022-05-09,Nantucket - Carrot Orange,83
+746-61-3996,2022-06-26,"Wine - Red, Cooking",69
+449-63-4671,2022-04-05,Cookie Trail Mix,69
+725-15-8149,2022-05-20,"Mop Head - Cotton, 24 Oz",89
+818-28-5853,2022-06-09,Calvados - Boulard,62
+330-07-6372,2022-05-27,Crackers - Trio,61
+311-36-2358,2022-05-15,Red Cod Fillets - 225g,61
+376-09-2475,2022-06-01,Bandage - Flexible Neon,73
+287-75-6209,2022-06-10,"Wine - Red, Cooking",97
+873-04-2799,2022-05-15,Ham - Cooked Bayonne Tinned,54
+233-14-1119,2022-03-15,Wine - Touraine Azay - Le - Rideau,67
+803-87-0997,2022-04-27,Teriyaki Sauce,76
+415-41-6535,2022-05-14,Wine - Lamancha Do Crianza,52
+408-59-3855,2022-04-10,"Wine - Red, Gallo, Merlot",89
+729-04-6332,2022-04-04,Pectin,88
+810-61-6992,2022-04-12,"Juice - Apple, 341 Ml",80
+883-49-9436,2022-06-24,Eggwhite Frozen,60
+421-57-7877,2022-04-05,"Cherries - Maraschino,jar",79
+447-05-4082,2022-06-11,"Vodka - Lemon, Absolut",99
+541-14-2967,2022-04-04,Mousse - Passion Fruit,89
+352-10-0992,2022-06-13,Cake Slab,59
+750-51-5414,2022-06-16,Chocolate - Mi - Amere Semi,74
+767-50-8063,2022-04-12,Wine - Cave Springs Dry Riesling,59
+586-94-8119,2022-05-02,"Soup - Campbells, Chix Gumbo",54
+593-71-5496,2022-03-05,Carbonated Water - Raspberry,53
+237-91-7300,2022-05-17,Cake - Cheese Cake 9 Inch,73
+814-94-6274,2022-04-06,Sauce - Plum,82
+791-08-8757,2022-03-17,Oil - Margarine,92
+478-01-4019,2022-05-03,Garbage Bags - Clear,69
+543-99-5258,2022-03-28,Pepper - Scotch Bonnet,94
+337-25-3632,2022-04-08,Pepper - Roasted Red,62
+509-93-1742,2022-05-05,Sprouts Dikon,88
+550-13-0566,2022-03-18,Cabbage - Green,58
+785-77-1802,2022-06-02,Rabbit - Frozen,66
+190-21-3855,2022-03-16,True - Vue Containers,60
+556-20-3500,2022-05-01,Wine - Magnotta - Belpaese,62
+646-32-0772,2022-06-04,Table Cloth 120 Round White,84
+694-97-4458,2022-05-22,"Lamb - Whole Head Off,nz",88
+689-20-1339,2022-05-17,Ice Cream - Super Sandwich,78
+395-14-7571,2022-06-06,Lettuce - Green Leaf,65
+388-45-8936,2022-05-18,Nantucket - Kiwi Berry Cktl.,80
+323-17-4583,2022-04-09,Apple - Fuji,71
+448-58-1969,2022-05-17,"Quail - Eggs, Fresh",82
+579-32-0229,2022-06-29,Five Alive Citrus,51
+106-40-4196,2022-04-08,Sprite - 355 Ml,54
+488-96-6912,2022-04-11,Cafe Royale,65
+223-62-9646,2022-03-14,Frangelico,91
+787-01-9334,2022-05-19,Baking Powder,95
+439-45-2896,2022-06-16,Mix - Cappucino Cocktail,97
+686-69-1960,2022-03-12,Pastry - Baked Cinnamon Stick,51
+701-39-2618,2022-05-15,Sole - Iqf,51
+679-37-4626,2022-06-16,Pork - Smoked Back Bacon,67
+407-38-7673,2022-03-05,Spring Roll Wrappers,64
+456-22-2279,2022-04-15,Cheese - St. Paulin,83
+372-76-7960,2022-06-04,Nougat - Paste / Cream,60
+167-81-0665,2022-05-14,Chick Peas - Canned,56
+690-65-6752,2022-04-20,Chinese Foods - Thick Noodles,57
+533-45-9996,2022-04-12,Lobster - Live,51
+884-40-7446,2022-04-23,"Beef - Baby, Liver",82
+171-74-3602,2022-06-01,Plasticknivesblack,79
+216-03-7476,2022-06-17,Instant Coffee,79
+720-93-3679,2022-05-20,Chocolate Bar - Smarties,64
+388-04-7257,2022-05-24,"Lettuce - Romaine, Heart",71
+101-19-1361,2022-04-21,Skirt - 29 Foot,85
+550-41-2024,2022-05-03,Cheese - Mascarpone,98
+124-64-7747,2022-03-17,"Appetizer - Spring Roll, Veg",80
+392-20-0892,2022-06-03,Cheese - Augre Des Champs,71
+255-16-4038,2022-05-27,Ginger - Crystalized,85
+655-20-6239,2022-05-12,Bacardi Breezer - Strawberry,80
+520-91-6619,2022-05-26,Sage Ground Wiberg,57
+238-26-3957,2022-03-05,Glycerine,80
+266-98-2498,2022-05-14,"Coke - Diet, 355 Ml",89
+285-82-2117,2022-03-05,"Quail - Whole, Boneless",99
+858-70-9825,2022-03-10,Extract - Rum,64
+273-20-4995,2022-03-27,"Soup - Campbells, Butternut",64
+577-81-4952,2022-04-19,Oven Mitt - 13 Inch,85
+709-85-5305,2022-05-28,Squash - Pepper,78
+522-45-7922,2022-05-01,Pastry - Apple Large,79
+563-18-3093,2022-03-24,Pork - Smoked Kassler,70
+241-71-1496,2022-05-14,Wood Chips - Regular,93
+165-35-4434,2022-06-16,Tuna - Fresh,67
+134-12-9059,2022-03-24,Beef - Striploin,58
+391-48-3528,2022-06-10,Aspic - Amber,92
+793-77-2416,2022-03-10,Spaghetti Squash,86
+234-10-0886,2022-05-22,Lady Fingers,90
+587-09-3454,2022-05-17,Onions - White,96
+281-89-6138,2022-06-01,Bread - Olive Dinner Roll,61
+638-25-0188,2022-06-29,"Soup - Campbells, Classic Chix",77
+581-63-4389,2022-05-27,Cheese - Mix,93
+249-42-2646,2022-05-11,Pail With Metal Handle 16l White,98
+763-05-6008,2022-06-21,Sandwich Wrap,82
+379-55-6062,2022-05-29,Wine - Zinfandel California 2002,78
+187-60-9431,2022-06-16,Crab - Meat Combo,79
+472-50-3024,2022-05-04,Yucca,58
+634-65-2020,2022-05-06,Rice - Sushi,94
+567-12-8138,2022-06-14,"Salsify, Organic",88
+545-93-4320,2022-04-21,Bread - 10 Grain,95
+890-05-1611,2022-03-14,Puree - Passion Fruit,60
+639-53-7130,2022-04-07,Spice - Chili Powder Mexican,62
+895-12-3174,2022-03-13,"Lamb - Loin, Trimmed, Boneless",53
+809-20-8975,2022-05-27,Soup - Chicken And Wild Rice,92
+723-67-1415,2022-03-05,Sesame Seed,84
+323-33-1309,2022-06-04,Squid - Breaded,99
+268-97-2655,2022-04-11,Beer - True North Lager,93
+897-48-0572,2022-06-13,Eel Fresh,84
+305-99-8432,2022-06-02,Smoked Paprika,66
+389-74-2268,2022-03-02,Calaloo,91
+710-38-6650,2022-05-21,Mix - Cocktail Ice Cream,86
+261-64-9996,2022-06-18,Hipnotiq Liquor,83
+819-39-2654,2022-04-04,Glass Clear 8 Oz,95
+467-60-0051,2022-03-16,Soup - Campbells - Chicken Noodle,82
+359-50-5694,2022-05-17,Bagels Poppyseed,68
+726-01-1439,2022-06-19,Clams - Bay,62
+849-06-8460,2022-06-22,Soup - Campbells,70
+700-44-9515,2022-03-28,Nut - Pumpkin Seeds,93
+528-05-3407,2022-05-31,"Cheese - Havarti, Salsa",64
+745-72-6752,2022-05-31,Shrimp - 150 - 250,95
+850-09-6585,2022-03-31,Cheese - Brick With Pepper,51
+660-59-7247,2022-04-16,Wine - George Duboeuf Rose,95
+109-77-4437,2022-05-28,Creme De Menthe Green,73
+638-60-5709,2022-06-12,Extract - Raspberry,99
+537-55-9144,2022-06-09,"Fish - Scallops, Cold Smoked",80
+828-09-8298,2022-05-07,Wine - Barossa Valley Estate,88
+523-40-9491,2022-05-26,Cheese - Perron Cheddar,63
+221-96-0602,2022-06-24,Wine - George Duboeuf Rose,89
+720-53-5627,2022-03-29,"Fish - Artic Char, Cold Smoked",65
+373-12-8544,2022-03-24,Petit Baguette,81
+287-57-8078,2022-05-09,Mix - Cocktail Strawberry Daiquiri,77
+856-96-4061,2022-04-11,"Shrimp - 16 - 20 Cooked, Peeled",86
+749-03-2412,2022-03-11,Wine - Rhine Riesling Wolf Blass,76
+603-78-7939,2022-06-14,Aspic - Light,70
+288-85-5643,2022-06-20,Icecream - Dstk Cml And Fdg,90
+766-76-7442,2022-04-09,Table Cloth 62x114 Colour,62
+539-17-0575,2022-06-24,Filo Dough,95
+332-20-8792,2022-06-28,Thermometer Digital,76
+424-93-5952,2022-03-04,Bread - Hot Dog Buns,99
+632-18-4944,2022-06-10,Beer - Pilsner Urquell,100
+174-34-1371,2022-04-26,Cinnamon Buns Sticky,65
+489-78-3858,2022-04-02,Cream - 18%,97
+728-25-7137,2022-05-10,Wine - Bouchard La Vignee Pinot,98
+349-83-9637,2022-05-11,Cookie Dough - Chocolate Chip,71
+741-54-7285,2022-04-02,"Wine - Red, Pinot Noir, Chateau",98
+467-15-0870,2022-03-25,French Kiss Vanilla,58
+268-60-4834,2022-03-08,Bread - Raisin Walnut Oval,90
+337-21-1720,2022-05-22,Ice Cream - Life Savers,91
+389-38-6726,2022-05-09,Compound - Mocha,81
+845-82-6151,2022-03-08,Bread Sour Rolls,94
+822-77-1030,2022-05-19,Venison - Liver,74
+873-27-1392,2022-03-01,Lettuce - Baby Salad Greens,51
+117-21-4277,2022-05-17,Flour - Strong,72
+347-77-8187,2022-03-22,Transfer Sheets,86
+539-65-0508,2022-05-10,Cups 10oz Trans,54
+115-79-7945,2022-06-24,Appetizer - Southwestern,91
+767-39-4748,2022-05-01,"Club Soda - Schweppes, 355 Ml",61
+558-62-0948,2022-03-13,Soup - Campbells Tomato Ravioli,91
+394-01-2502,2022-06-27,Bacardi Breezer - Tropical,91
+597-34-7058,2022-03-18,Wine - Spumante Bambino White,77
+541-41-1575,2022-06-11,"Leeks - Baby, White",97
+219-20-0425,2022-05-01,Mushroom - Chanterelle Frozen,78
+131-62-5128,2022-03-11,Muffin Mix - Banana Nut,85
+492-48-2097,2022-05-20,Carroway Seed,62
+527-69-4865,2022-03-12,Rolled Oats,97
+412-46-3039,2022-03-04,Onions - Red Pearl,97
+549-10-3867,2022-05-06,"Veal - Chops, Split, Frenched",69
+567-20-2116,2022-05-03,Marjoram - Fresh,76
+709-10-9155,2022-06-16,Capers - Pickled,58
+374-95-2685,2022-05-27,"Soup - Campbells, Cream Of",55
+289-22-9542,2022-05-01,Wine - Zonnebloem Pinotage,86
+802-92-5670,2022-06-05,Cheese - Gouda Smoked,95
+253-95-5317,2022-05-12,Cherries - Fresh,56
+182-61-6101,2022-05-20,Lamb Leg - Bone - In Nz,93
+584-43-1620,2022-05-06,Container - Clear 32 Oz,56
+738-71-2204,2022-04-17,"Champagne - Brights, Dry",54
+876-73-3917,2022-03-17,Tea - Jasmin Green,78
+409-55-8747,2022-04-22,Mince Meat - Filling,58
+716-36-6850,2022-05-08,Wine - Maipo Valle Cabernet,75
+751-68-9455,2022-03-18,Pepper - Sorrano,92
+112-25-8105,2022-04-19,Container - Clear 32 Oz,91
+440-06-1452,2022-03-09,Galliano,100
+657-16-5231,2022-04-27,Daikon Radish,56
+545-77-3338,2022-04-10,Wine - Fume Blanc Fetzer,83
+314-11-6220,2022-05-08,Jolt Cola,92
+431-25-4577,2022-04-13,Bar Nature Valley,63
+391-74-6386,2022-06-27,Longos - Grilled Chicken With,60
+662-80-1889,2022-03-26,Sachet,81
+519-44-3939,2022-06-04,Foam Espresso Cup Plain White,72
+180-63-7077,2022-06-02,Bandage - Finger Cots,70
+894-34-0600,2022-06-17,"Wine - White, Cooking",75
+869-79-5836,2022-06-23,Ice Cream Bar - Oreo Sandwich,79
+394-07-4484,2022-03-12,Coffee - Flavoured,98
+308-98-3667,2022-04-19,"Onions - Dried, Chopped",86
+627-20-1551,2022-06-10,Sugar - Icing,62
+145-85-8274,2022-03-19,Tomato - Peeled Italian Canned,53
+807-40-4542,2022-05-31,Sherbet - Raspberry,91
+510-38-7425,2022-06-19,Anchovy Paste - 56 G Tube,82
+886-57-7616,2022-06-16,Peppercorns - Pink,59
+671-30-9066,2022-04-25,Lamb Rack - Ontario,70
+501-52-8535,2022-03-12,"Pasta - Lasagna, Dry",72
+497-92-5886,2022-06-15,"Syrup - Golden, Lyles",53
+248-24-5104,2022-04-23,Shiratamako - Rice Flour,79
+181-81-3826,2022-06-24,Wine - Vidal Icewine Magnotta,87
+433-48-9858,2022-06-24,"Pork - Chop, Frenched",79
+427-24-9086,2022-05-10,"Pepper - Green, Chili",53
+542-23-1090,2022-03-21,Pork - Bacon Cooked Slcd,99
+504-45-1414,2022-05-06,Grand Marnier,66
+263-85-6998,2022-03-01,"Veal - Round, Eye Of",81
+364-27-0144,2022-03-03,Salt - Kosher,91
+224-93-1674,2022-04-07,Sugar - Crumb,72
+870-43-6300,2022-06-05,Wine - Penfolds Koonuga Hill,66
+704-98-3521,2022-06-22,"Ham - Smoked, Bone - In",68
+408-95-3213,2022-03-18,Tart - Lemon,69
+217-99-6764,2022-05-10,Kahlua,90
+551-22-4785,2022-03-11,Muffin - Bran Ind Wrpd,84
+772-78-4162,2022-06-04,Beer - Mill St Organic,66
+623-75-8503,2022-05-01,Appetizer - Sausage Rolls,89
+312-57-0212,2022-05-25,Pork - Caul Fat,97
+862-95-7609,2022-04-17,Cheese - Ermite Bleu,63
+194-26-8605,2022-05-30,Soup - Campbells Beef Noodle,97
+847-94-7831,2022-06-19,Pate - Peppercorn,76
+433-55-9143,2022-04-13,"Veal - Shank, Pieces",85
+238-19-9378,2022-04-02,"Salsify, Organic",98
+627-04-7230,2022-03-13,"Plate - Foam, Bread And Butter",82
+747-82-8033,2022-05-15,Peas Snow,75
+227-78-2540,2022-03-24,Cake - Cake Sheet Macaroon,62
+330-05-3900,2022-05-12,Truffle Shells - Semi - Sweet,82
+425-99-3700,2022-04-12,Coffee - Cafe Moreno,57
+825-12-0062,2022-05-10,Sauce - Chili,97
+660-15-8797,2022-03-16,Apricots - Dried,87
+432-03-8081,2022-05-14,Figs,100
+165-25-2662,2022-03-11,"Pepsi, 355 Ml",99
+823-30-0027,2022-06-06,Chocolate - Mi - Amere Semi,86
+689-32-3606,2022-04-07,"Wine - Bourgogne 2002, La",96
+501-71-1581,2022-06-25,Scotch - Queen Anne,66
+821-51-5525,2022-05-20,Bread - Bistro Sour,77
+867-86-1793,2022-05-31,"Coke - Classic, 355 Ml",94
+535-85-3773,2022-06-28,Salmon - Canned,92
+800-22-4750,2022-06-22,Dc - Sakura Fu,89
+415-27-5812,2022-03-01,Salmon Steak - Cohoe 6 Oz,98
+214-09-5904,2022-04-03,Brandy Cherry - Mcguinness,90
+217-71-6788,2022-04-05,Ecolab - Hand Soap Form Antibac,84
+546-51-7950,2022-04-21,Longos - Lasagna Veg,55
+350-43-1641,2022-03-01,Beer - Sleemans Honey Brown,74
+418-77-8108,2022-03-08,"Shrimp - 16/20, Iqf, Shell On",51
+899-87-1021,2022-03-15,"Brownies - Two Bite, Chocolate",82
+620-67-3323,2022-06-11,Cranberries - Dry,91
+555-79-9605,2022-05-03,Chocolate - Chips Compound,90
+286-39-5922,2022-06-20,Arrowroot,52
+843-80-7184,2022-05-22,Cheese - Cheddarsliced,57
+119-04-5567,2022-04-05,Halibut - Steaks,56
+181-27-8707,2022-06-10,Beef - Ox Tongue,85
+343-01-9847,2022-06-24,"Wine - Saint - Bris 2002, Sauv",64
+561-51-8704,2022-04-01,Energy Drink,59
+227-57-4810,2022-03-21,Creamers - 10%,92
+173-43-8467,2022-04-06,Table Cloth 53x69 White,72
+559-96-7857,2022-04-23,Chocolate - Liqueur Cups With Foil,51
+500-37-8652,2022-06-02,Muffin Mix - Carrot,89
+402-39-5916,2022-04-23,Amaretto,53
+288-08-5755,2022-05-03,Pomegranates,98
+676-31-3684,2022-05-20,Tea - Lemon Green Tea,74
+508-11-1734,2022-03-01,Nantucket Apple Juice,60
+714-27-9046,2022-06-11,Gelatine Leaves - Envelopes,90
+842-54-7307,2022-04-30,Cumin - Ground,95
+883-91-0511,2022-05-22,"Juice - Pineapple, 48 Oz",99
+860-81-3151,2022-04-05,Wine - Two Oceans Cabernet,58
+707-47-7589,2022-04-09,Pate - Cognac,75
+564-58-3529,2022-05-02,Canada Dry,94
+303-60-5397,2022-06-25,Lentils - Green Le Puy,95
+481-56-3877,2022-04-23,Napkin Colour,53
+519-58-5729,2022-05-28,"Jam - Marmalade, Orange",88
+364-50-1177,2022-05-08,Flavouring Vanilla Artificial,85
+345-59-0130,2022-04-09,Cheese - Blue,87
+382-20-4480,2022-04-13,Cheese - Gorgonzola,83
+840-50-1826,2022-05-31,"Cheese - Cheddar, Old White",90
+361-65-2316,2022-03-23,"Bread - White, Unsliced",97
+612-55-5935,2022-05-27,"Beef - Baby, Liver",57
+773-09-6760,2022-05-28,English Muffin,56
+608-44-5817,2022-04-18,Bread Crumbs - Japanese Style,94
+802-76-4137,2022-04-28,"Pork - Bacon, Sliced",95
+897-40-7108,2022-05-23,Cup Translucent 9 Oz,86
+548-20-9269,2022-03-18,Wine - Vovray Sec Domaine Huet,74
+112-63-5494,2022-06-06,"Wine - Niagara,vqa Reisling",75
+214-31-3523,2022-05-03,Muffin Mix - Lemon Cranberry,81
+766-01-5069,2022-04-27,Garam Marsala,53
+428-58-6265,2022-03-27,Pepper - Yellow Bell,62
+251-54-6331,2022-03-25,Dc - Sakura Fu,61
+805-53-1452,2022-03-07,Cinnamon - Ground,81
+163-57-0196,2022-05-08,Rice - Wild,75
+560-85-6778,2022-05-06,Cheese - Ricotta,81
+238-73-1514,2022-05-30,Squid Ink,100
+722-55-8156,2022-05-16,Grouper - Fresh,64
+451-92-9125,2022-05-02,Salt - Celery,79
+856-07-6950,2022-05-03,"Pasta - Bauletti, Chicken White",85
+264-43-1137,2022-05-31,Sauce - Hp,53
+623-21-8126,2022-03-13,Broccoli - Fresh,74
+296-25-5119,2022-04-03,Wine - Conde De Valdemar,88
+835-28-7625,2022-05-09,Danishes - Mini Cheese,58
+797-96-7383,2022-06-06,Bagelers - Cinn / Brown Sugar,61
+126-40-5767,2022-03-15,Sprouts - Peppercress,88
+506-85-3370,2022-05-28,Fruit Salad Deluxe,95
+654-56-6143,2022-04-05,Soup - Campbells - Tomato,93
+146-23-6941,2022-05-28,Wasabi Paste,56
+791-56-6989,2022-04-08,Wine - Spumante Bambino White,64
+331-41-4860,2022-03-15,Lid Coffeecup 12oz D9542b,69
+122-72-5174,2022-04-07,Juice - Happy Planet,61
+506-18-7748,2022-05-13,"Noodles - Cellophane, Thin",99
+847-51-4012,2022-03-29,Pate - Cognac,96
+598-02-3878,2022-06-08,Cookies Oatmeal Raisin,75
+505-33-5053,2022-03-16,Squid U5 - Thailand,83
+464-83-6888,2022-04-26,Bread - Malt,53
+202-30-6446,2022-05-26,Flower - Potmums,83
+574-38-6481,2022-03-21,Salt And Pepper Mix - White,56
+274-23-9977,2022-05-25,Eggwhite Frozen,98
+302-34-0560,2022-05-26,Kohlrabi,80
+708-67-1181,2022-03-09,Tart - Raisin And Pecan,88
+809-61-8528,2022-04-14,Magnotta - Bel Paese White,88
+408-03-1614,2022-05-29,Sprouts - Alfalfa,80
+441-19-7741,2022-03-16,Chicken - Soup Base,67
+579-44-1625,2022-04-13,Foam Tray S2,72
+250-86-1113,2022-05-14,Yogurt - Assorted Pack,62
+117-95-9123,2022-05-17,Cabbage - Green,80
+654-04-1477,2022-04-18,Chocolate Eclairs,83
+234-50-1818,2022-03-27,Nantucket Apple Juice,95
+247-10-4024,2022-06-03,Sansho Powder,78
+279-36-0908,2022-06-14,Bread Foccacia Whole,66
+571-81-6705,2022-06-02,Pastry - Butterscotch Baked,75
+568-96-7734,2022-04-08,Cookie Dough - Chocolate Chip,91
+657-27-4998,2022-05-02,Urban Zen Drinks,89
+392-06-7925,2022-04-29,"Wine - Sherry Dry Sack, William",61
+680-32-2613,2022-04-17,"Chilli Paste, Ginger Garlic",95
+140-92-0403,2022-03-13,Pie Pecan,69
+341-47-1195,2022-06-04,"Shrimp - Baby, Cold Water",51
+679-05-6862,2022-05-28,Cheese - Bakers Cream Cheese,81
+674-22-6724,2022-04-21,Hagen Daza - Dk Choocolate,53
+571-03-5037,2022-03-20,Soupcontfoam16oz 116con,53
+536-78-7975,2022-05-19,Cream Of Tartar,99
+504-92-6287,2022-04-07,"Lentils - Red, Dry",69
+571-39-9729,2022-06-26,Chocolate - Mi - Amere Semi,84
+382-63-7294,2022-05-22,Wine - Ruffino Chianti Classico,51
+785-83-5756,2022-04-16,Sauce - Plum,67
+870-39-0757,2022-03-19,"Pail - 15l White, With Handle",72
+181-99-2348,2022-06-15,"Soup - Campbells, Cream Of",56
+855-95-8449,2022-03-27,Pea - Snow,74
+513-72-4404,2022-05-26,"Stock - Beef, Brown",59
+611-26-3422,2022-05-17,"Mustard - Dry, Powder",85
+856-40-9429,2022-03-08,Pork - Sausage Casing,84
+630-31-5892,2022-04-09,"Oregano - Dry, Rubbed",69
+287-67-7181,2022-05-23,Calaloo,96
+692-13-9677,2022-05-03,Shiro Miso,82
+558-41-3999,2022-05-03,Juice - Lagoon Mango,81
+195-50-1280,2022-04-29,Cheese - Montery Jack,66
+357-91-7886,2022-03-04,Sauce - Demi Glace,99
+353-77-5814,2022-06-26,Cabbage - Nappa,78
+562-24-7734,2022-03-17,Coffee - Hazelnut Cream,63
+248-31-9482,2022-03-24,Wine - Sauvignon Blanc Oyster,84
+644-09-3906,2022-06-03,Pastry - Butterscotch Baked,69
+210-17-8096,2022-05-15,"Wine - Magnotta - Red, Baco",51
+241-91-6355,2022-04-01,Evaporated Milk - Skim,66
+153-84-4751,2022-05-20,"Pasta - Fettuccine, Dry",57
+244-41-2605,2022-06-03,Cocoa Feuilletine,88
+745-21-8792,2022-06-11,"Turkey - Whole, Fresh",66
+281-50-9366,2022-05-03,Vol Au Vents,79
+217-08-9015,2022-03-13,Bread - Petit Baguette,94
+569-52-8007,2022-06-05,Pastry - Choclate Baked,63
+118-06-9996,2022-05-29,"Beef - Rib Roast, Capless",54
+152-22-5702,2022-05-11,Cabbage - Savoy,70
+279-27-7346,2022-05-06,Juice - Prune,75
+123-41-8936,2022-06-19,Jam - Apricot,55
+665-19-5654,2022-05-02,Lady Fingers,66
+533-38-3544,2022-04-06,Bar Mix - Lemon,87
+139-15-9795,2022-05-02,Papadam,91
+262-34-8997,2022-04-01,Oil - Macadamia,95
+547-38-0102,2022-05-03,Rabbit - Legs,67
+399-95-3379,2022-04-26,"Capon - Breast, Wing On",80
+362-97-3315,2022-03-09,Table Cloth 54x54 White,81
+748-37-0011,2022-04-21,"Nut - Pecan, Halves",90
+270-11-9312,2022-06-06,Compound - Pear,60
+827-50-7326,2022-05-02,Bar Bran Honey Nut,53
+210-54-3099,2022-05-08,Rootbeer,87
+327-69-4502,2022-03-21,Wine - Rosso Toscano Igt,69
+207-27-2751,2022-03-15,"Wine - White, Ej",58
+365-21-0355,2022-04-07,Cheese - Gorgonzola,95
+514-19-0400,2022-03-30,Wine - Ice Wine,89
+343-55-4575,2022-03-18,Melon - Watermelon Yellow,69
+439-03-1022,2022-04-06,Capers - Pickled,74

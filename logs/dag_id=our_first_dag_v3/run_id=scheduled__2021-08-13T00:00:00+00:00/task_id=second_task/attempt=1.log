@@ -1,0 +1,17 @@
+[2024-03-11T14:00:20.465+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_first_dag_v3.second_task scheduled__2021-08-13T00:00:00+00:00 [queued]>
+[2024-03-11T14:00:20.495+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_first_dag_v3.second_task scheduled__2021-08-13T00:00:00+00:00 [queued]>
+[2024-03-11T14:00:20.496+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-03-11T14:00:20.538+0000] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): second_task> on 2021-08-13 00:00:00+00:00
+[2024-03-11T14:00:20.550+0000] {standard_task_runner.py:60} INFO - Started process 2878 to run task
+[2024-03-11T14:00:20.560+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v3', 'second_task', 'scheduled__2021-08-13T00:00:00+00:00', '--job-id', '728', '--raw', '--subdir', 'DAGS_FOLDER/our_first_dag.py', '--cfg-path', '/tmp/tmp2378xb27']
+[2024-03-11T14:00:20.566+0000] {standard_task_runner.py:88} INFO - Job 728: Subtask second_task
+[2024-03-11T14:00:20.690+0000] {task_command.py:423} INFO - Running <TaskInstance: our_first_dag_v3.second_task scheduled__2021-08-13T00:00:00+00:00 [running]> on host 26e63b1d0d39
+[2024-03-11T14:00:20.907+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='coder2j' AIRFLOW_CTX_DAG_ID='our_first_dag_v3' AIRFLOW_CTX_TASK_ID='second_task' AIRFLOW_CTX_EXECUTION_DATE='2021-08-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-08-13T00:00:00+00:00'
+[2024-03-11T14:00:20.917+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-11T14:00:20.920+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo hey, I am task2 and I ran after task1']
+[2024-03-11T14:00:20.956+0000] {subprocess.py:86} INFO - Output:
+[2024-03-11T14:00:20.958+0000] {subprocess.py:93} INFO - hey, I am task2 and I ran after task1
+[2024-03-11T14:00:20.962+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-11T14:00:21.038+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v3, task_id=second_task, execution_date=20210813T000000, start_date=20240311T140020, end_date=20240311T140021
+[2024-03-11T14:00:21.101+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-11T14:00:21.217+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

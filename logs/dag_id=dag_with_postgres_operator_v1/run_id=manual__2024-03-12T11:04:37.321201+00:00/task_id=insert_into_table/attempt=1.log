@@ -1,0 +1,58 @@
+[2024-03-12T11:08:37.389+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v1.insert_into_table manual__2024-03-12T11:04:37.321201+00:00 [queued]>
+[2024-03-12T11:08:37.418+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v1.insert_into_table manual__2024-03-12T11:04:37.321201+00:00 [queued]>
+[2024-03-12T11:08:37.421+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-03-12T11:08:37.470+0000] {taskinstance.py:2214} INFO - Executing <Task(PostgresOperator): insert_into_table> on 2024-03-12 11:04:37.321201+00:00
+[2024-03-12T11:08:37.487+0000] {standard_task_runner.py:60} INFO - Started process 2023 to run task
+[2024-03-12T11:08:37.501+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_operator_v1', 'insert_into_table', 'manual__2024-03-12T11:04:37.321201+00:00', '--job-id', '878', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_postgres_operator.py', '--cfg-path', '/tmp/tmpj_pk8cak']
+[2024-03-12T11:08:37.507+0000] {standard_task_runner.py:88} INFO - Job 878: Subtask insert_into_table
+[2024-03-12T11:08:37.655+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_with_postgres_operator_v1.insert_into_table manual__2024-03-12T11:04:37.321201+00:00 [running]> on host 26e63b1d0d39
+[2024-03-12T11:08:37.839+0000] {abstractoperator.py:707} ERROR - Exception rendering Jinja template for task 'insert_into_table', field 'sql'. Template: " \n            insert into table dag_runs (dt, dag_id) values ('{{dt}}', '{{dag.dag_id}}' )\n        )"
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/abstractoperator.py", line 699, in _do_render_template_fields
+    rendered_content = self.render_template(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/template/templater.py", line 174, in render_template
+    return self._render(template, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/abstractoperator.py", line 654, in _render
+    return super()._render(template, context, dag=dag)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/template/templater.py", line 131, in _render
+    return render_template_to_string(template, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+  File "<template>", line 14, in root
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/runtime.py", line 852, in _fail_with_undefined_error
+    raise self._undefined_exception(self._undefined_message)
+jinja2.exceptions.UndefinedError: 'dt' is undefined
+[2024-03-12T11:08:37.844+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2357, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2495, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2907, in render_templates
+    original_task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 1241, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/abstractoperator.py", line 699, in _do_render_template_fields
+    rendered_content = self.render_template(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/template/templater.py", line 174, in render_template
+    return self._render(template, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/abstractoperator.py", line 654, in _render
+    return super()._render(template, context, dag=dag)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/template/templater.py", line 131, in _render
+    return render_template_to_string(template, context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+  File "<template>", line 14, in root
+  File "/home/airflow/.local/lib/python3.8/site-packages/jinja2/runtime.py", line 852, in _fail_with_undefined_error
+    raise self._undefined_exception(self._undefined_message)
+jinja2.exceptions.UndefinedError: 'dt' is undefined
+[2024-03-12T11:08:37.875+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_postgres_operator_v1, task_id=insert_into_table, execution_date=20240312T110437, start_date=20240312T110837, end_date=20240312T110837
+[2024-03-12T11:08:37.915+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 878 for task insert_into_table ('dt' is undefined; 2023)
+[2024-03-12T11:08:37.956+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-12T11:08:38.032+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

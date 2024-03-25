@@ -1,0 +1,38 @@
+[2024-03-12T11:01:55.916+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v1.create_postgres_table manual__2024-03-12T11:01:54.726160+00:00 [queued]>
+[2024-03-12T11:01:55.959+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v1.create_postgres_table manual__2024-03-12T11:01:54.726160+00:00 [queued]>
+[2024-03-12T11:01:55.960+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-03-12T11:01:56.005+0000] {taskinstance.py:2214} INFO - Executing <Task(PostgresOperator): create_postgres_table> on 2024-03-12 11:01:54.726160+00:00
+[2024-03-12T11:01:56.015+0000] {standard_task_runner.py:60} INFO - Started process 1525 to run task
+[2024-03-12T11:01:56.026+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_operator_v1', 'create_postgres_table', 'manual__2024-03-12T11:01:54.726160+00:00', '--job-id', '871', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_postgres_operator.py', '--cfg-path', '/tmp/tmptdaier4s']
+[2024-03-12T11:01:56.031+0000] {standard_task_runner.py:88} INFO - Job 871: Subtask create_postgres_table
+[2024-03-12T11:01:56.157+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_with_postgres_operator_v1.create_postgres_table manual__2024-03-12T11:01:54.726160+00:00 [running]> on host 26e63b1d0d39
+[2024-03-12T11:01:56.324+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_with_postgres_operator_v1' AIRFLOW_CTX_TASK_ID='create_postgres_table' AIRFLOW_CTX_EXECUTION_DATE='2024-03-12T11:01:54.726160+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-12T11:01:54.726160+00:00'
+[2024-03-12T11:01:56.326+0000] {sql.py:276} INFO - Executing:  create table if not exists dag_runs(
+                dt_date,
+                dag_id character varying,
+                primery key (dt,dag_id)
+
+        )
+[2024-03-12T11:01:56.345+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-03-12T11:01:56.372+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-03-12T11:01:56.380+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 397, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 161, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "host.docker.local" to address: Name or service not known
+
+[2024-03-12T11:01:56.398+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_postgres_operator_v1, task_id=create_postgres_table, execution_date=20240312T110154, start_date=20240312T110155, end_date=20240312T110156
+[2024-03-12T11:01:56.423+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 871 for task create_postgres_table (could not translate host name "host.docker.local" to address: Name or service not known
+; 1525)
+[2024-03-12T11:01:56.480+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-12T11:01:56.517+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

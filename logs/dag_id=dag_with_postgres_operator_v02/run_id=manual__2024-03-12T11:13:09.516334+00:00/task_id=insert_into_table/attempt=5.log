@@ -1,0 +1,38 @@
+[2024-03-12T11:33:15.559+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v02.insert_into_table manual__2024-03-12T11:13:09.516334+00:00 [queued]>
+[2024-03-12T11:33:15.569+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v02.insert_into_table manual__2024-03-12T11:13:09.516334+00:00 [queued]>
+[2024-03-12T11:33:15.570+0000] {taskinstance.py:2193} INFO - Starting attempt 5 of 6
+[2024-03-12T11:33:15.585+0000] {taskinstance.py:2214} INFO - Executing <Task(PostgresOperator): insert_into_table> on 2024-03-12 11:13:09.516334+00:00
+[2024-03-12T11:33:15.590+0000] {standard_task_runner.py:60} INFO - Started process 3858 to run task
+[2024-03-12T11:33:15.595+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_operator_v02', 'insert_into_table', 'manual__2024-03-12T11:13:09.516334+00:00', '--job-id', '915', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_postgres_operator.py', '--cfg-path', '/tmp/tmpgvufluz5']
+[2024-03-12T11:33:15.598+0000] {standard_task_runner.py:88} INFO - Job 915: Subtask insert_into_table
+[2024-03-12T11:33:15.651+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_with_postgres_operator_v02.insert_into_table manual__2024-03-12T11:13:09.516334+00:00 [running]> on host 26e63b1d0d39
+[2024-03-12T11:33:15.734+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_with_postgres_operator_v02' AIRFLOW_CTX_TASK_ID='insert_into_table' AIRFLOW_CTX_EXECUTION_DATE='2024-03-12T11:13:09.516334+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-12T11:13:09.516334+00:00'
+[2024-03-12T11:33:15.735+0000] {sql.py:276} INFO - Executing: 
+            insert into dag_runs (dt, dag_id) values ('2024-03-12', 'dag_with_postgres_operator_v02')
+        
+[2024-03-12T11:33:15.746+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-03-12T11:33:15.757+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-03-12T11:33:15.764+0000] {sql.py:457} INFO - Running statement: 
+            insert into dag_runs (dt, dag_id) values ('2024-03-12', 'dag_with_postgres_operator_v02')
+        , parameters: None
+[2024-03-12T11:33:15.767+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 404, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 462, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dag_runs_pkey"
+DETAIL:  Key (dt, dag_id)=(2024-03-12, dag_with_postgres_operator_v02) already exists.
+
+[2024-03-12T11:33:15.777+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_postgres_operator_v02, task_id=insert_into_table, execution_date=20240312T111309, start_date=20240312T113315, end_date=20240312T113315
+[2024-03-12T11:33:15.788+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 915 for task insert_into_table (duplicate key value violates unique constraint "dag_runs_pkey"
+DETAIL:  Key (dt, dag_id)=(2024-03-12, dag_with_postgres_operator_v02) already exists.
+; 3858)
+[2024-03-12T11:33:15.806+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-12T11:33:15.828+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

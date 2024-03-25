@@ -1,0 +1,1 @@
+[2024-03-12T11:00:59.450+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: dag_with_postgres_operator_v1.create_postgres_table manual__2024-03-12T11:00:57.337734+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
