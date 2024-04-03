@@ -1,0 +1,14 @@
+[2024-03-27T14:05:29.387+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.process_success_message manual__2024-03-27T14:05:25.626178+00:00 [queued]>
+[2024-03-27T14:05:29.412+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.process_success_message manual__2024-03-27T14:05:25.626178+00:00 [queued]>
+[2024-03-27T14:05:29.413+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-03-27T14:05:29.452+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): process_success_message> on 2024-03-27 14:05:25.626178+00:00
+[2024-03-27T14:05:29.462+0000] {standard_task_runner.py:60} INFO - Started process 9557 to run task
+[2024-03-27T14:05:29.481+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'process_success_message', 'manual__2024-03-27T14:05:25.626178+00:00', '--job-id', '1068', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmpa3hyirog']
+[2024-03-27T14:05:29.498+0000] {standard_task_runner.py:88} INFO - Job 1068: Subtask process_success_message
+[2024-03-27T14:05:29.631+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.process_success_message manual__2024-03-27T14:05:25.626178+00:00 [running]> on host 932f824b7ebb
+[2024-03-27T14:05:29.842+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='process_success_message' AIRFLOW_CTX_EXECUTION_DATE='2024-03-27T14:05:25.626178+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-27T14:05:25.626178+00:00'
+[2024-03-27T14:05:29.848+0000] {logging_mixin.py:188} INFO - proccess success messages
+[2024-03-27T14:05:29.852+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-27T14:05:29.887+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=dag_allocate_messages, task_id=process_success_message, execution_date=20240327T140525, start_date=20240327T140529, end_date=20240327T140529
+[2024-03-27T14:05:29.977+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-27T14:05:30.076+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

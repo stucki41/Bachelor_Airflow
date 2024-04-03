@@ -1,0 +1,16 @@
+[2024-04-03T09:00:18.299+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.process_warning_messages manual__2024-04-03T09:00:16.599289+00:00 [queued]>
+[2024-04-03T09:00:18.332+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.process_warning_messages manual__2024-04-03T09:00:16.599289+00:00 [queued]>
+[2024-04-03T09:00:18.334+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-04-03T09:00:18.387+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): process_warning_messages> on 2024-04-03 09:00:16.599289+00:00
+[2024-04-03T09:00:18.398+0000] {standard_task_runner.py:60} INFO - Started process 8095 to run task
+[2024-04-03T09:00:18.418+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'process_warning_messages', 'manual__2024-04-03T09:00:16.599289+00:00', '--job-id', '1225', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmp2a7xn101']
+[2024-04-03T09:00:18.423+0000] {standard_task_runner.py:88} INFO - Job 1225: Subtask process_warning_messages
+[2024-04-03T09:00:18.544+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.process_warning_messages manual__2024-04-03T09:00:16.599289+00:00 [running]> on host af8488263d95
+[2024-04-03T09:00:18.770+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='process_warning_messages' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T09:00:16.599289+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T09:00:16.599289+00:00'
+[2024-04-03T09:00:18.777+0000] {logging_mixin.py:188} INFO - proccess warning messages
+[2024-04-03T09:00:18.802+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-04-03T09:00:18.850+0000] {logging_mixin.py:188} INFO - insert warning ID: 3
+[2024-04-03T09:00:18.901+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-03T09:00:18.925+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=dag_allocate_messages, task_id=process_warning_messages, execution_date=20240403T090016, start_date=20240403T090018, end_date=20240403T090018
+[2024-04-03T09:00:18.992+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-03T09:00:19.050+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
