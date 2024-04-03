@@ -1,0 +1,36 @@
+[2024-04-03T09:57:10.417+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.delete_original_messages manual__2024-04-03T09:31:57.754890+00:00 [queued]>
+[2024-04-03T09:57:10.439+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.delete_original_messages manual__2024-04-03T09:31:57.754890+00:00 [queued]>
+[2024-04-03T09:57:10.440+0000] {taskinstance.py:2193} INFO - Starting attempt 6 of 6
+[2024-04-03T09:57:10.467+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): delete_original_messages> on 2024-04-03 09:31:57.754890+00:00
+[2024-04-03T09:57:10.476+0000] {standard_task_runner.py:60} INFO - Started process 14496 to run task
+[2024-04-03T09:57:10.484+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'delete_original_messages', 'manual__2024-04-03T09:31:57.754890+00:00', '--job-id', '1293', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmplq05oqix']
+[2024-04-03T09:57:10.489+0000] {standard_task_runner.py:88} INFO - Job 1293: Subtask delete_original_messages
+[2024-04-03T09:57:10.586+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.delete_original_messages manual__2024-04-03T09:31:57.754890+00:00 [running]> on host af8488263d95
+[2024-04-03T09:57:10.750+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='delete_original_messages' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T09:31:57.754890+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T09:31:57.754890+00:00'
+[2024-04-03T09:57:10.753+0000] {logging_mixin.py:188} INFO - delete original messages
+[2024-04-03T09:57:10.821+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-04-03T09:57:10.849+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_allocate_messages.py", line 156, in delete_original_messages
+    cursor.execute("DELETE FROM messages WHERE msg_id = {}".format(id))
+psycopg2.errors.UndefinedFunction: operator does not exist: character varying = integer
+LINE 1: DELETE FROM messages WHERE msg_id = 2
+                                          ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[2024-04-03T09:57:10.865+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=dag_allocate_messages, task_id=delete_original_messages, execution_date=20240403T093157, start_date=20240403T095710, end_date=20240403T095710
+[2024-04-03T09:57:10.915+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1293 for task delete_original_messages (operator does not exist: character varying = integer
+LINE 1: DELETE FROM messages WHERE msg_id = 2
+                                          ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+; 14496)
+[2024-04-03T09:57:10.938+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-03T09:57:10.970+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,34 @@
+[2024-04-03T08:02:59.618+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.process_success_message scheduled__2024-04-02T00:00:00+00:00 [queued]>
+[2024-04-03T08:02:59.644+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.process_success_message scheduled__2024-04-02T00:00:00+00:00 [queued]>
+[2024-04-03T08:02:59.647+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-04-03T08:02:59.689+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): process_success_message> on 2024-04-02 00:00:00+00:00
+[2024-04-03T08:02:59.699+0000] {standard_task_runner.py:60} INFO - Started process 1745 to run task
+[2024-04-03T08:02:59.730+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'process_success_message', 'scheduled__2024-04-02T00:00:00+00:00', '--job-id', '1209', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmpv1vvtnu1']
+[2024-04-03T08:02:59.739+0000] {standard_task_runner.py:88} INFO - Job 1209: Subtask process_success_message
+[2024-04-03T08:02:59.870+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.process_success_message scheduled__2024-04-02T00:00:00+00:00 [running]> on host af8488263d95
+[2024-04-03T08:03:00.067+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='process_success_message' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-02T00:00:00+00:00'
+[2024-04-03T08:03:00.074+0000] {logging_mixin.py:188} INFO - proccess success messages
+[2024-04-03T08:03:00.093+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-04-03T08:03:00.132+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_allocate_messages.py", line 72, in process_success_messages
+    cursor.execute("select * from messages where type = 'success'")
+psycopg2.errors.UndefinedColumn: column "type" does not exist
+LINE 1: select * from messages where type = 'success'
+                                     ^
+
+[2024-04-03T08:03:00.150+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_allocate_messages, task_id=process_success_message, execution_date=20240402T000000, start_date=20240403T080259, end_date=20240403T080300
+[2024-04-03T08:03:00.171+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1209 for task process_success_message (column "type" does not exist
+LINE 1: select * from messages where type = 'success'
+                                     ^
+; 1745)
+[2024-04-03T08:03:00.205+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-03T08:03:00.248+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

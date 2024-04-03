@@ -1,0 +1,33 @@
+[2024-03-30T22:05:24.946+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.select_and_allocate_messages scheduled__2024-03-27T00:00:00+00:00 [queued]>
+[2024-03-30T22:05:25.101+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.select_and_allocate_messages scheduled__2024-03-27T00:00:00+00:00 [queued]>
+[2024-03-30T22:05:25.115+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-03-30T22:05:25.350+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): select_and_allocate_messages> on 2024-03-27 00:00:00+00:00
+[2024-03-30T22:05:25.440+0000] {standard_task_runner.py:60} INFO - Started process 16846 to run task
+[2024-03-30T22:05:25.533+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'select_and_allocate_messages', 'scheduled__2024-03-27T00:00:00+00:00', '--job-id', '1116', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmpdjpapxeq']
+[2024-03-30T22:05:25.570+0000] {standard_task_runner.py:88} INFO - Job 1116: Subtask select_and_allocate_messages
+[2024-03-30T22:05:26.199+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.select_and_allocate_messages scheduled__2024-03-27T00:00:00+00:00 [running]> on host 932f824b7ebb
+[2024-03-30T22:05:27.493+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='select_and_allocate_messages' AIRFLOW_CTX_EXECUTION_DATE='2024-03-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-27T00:00:00+00:00'
+[2024-03-30T22:05:27.653+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-03-30T22:05:37.679+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_allocate_messages.py", line 13, in select_and_allocate_messages
+    conn = hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 161, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "host.docker.internal" to address: Temporary failure in name resolution
+
+[2024-03-30T22:05:37.726+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_allocate_messages, task_id=select_and_allocate_messages, execution_date=20240327T000000, start_date=20240330T220524, end_date=20240330T220537
+[2024-03-30T22:05:37.787+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1116 for task select_and_allocate_messages (could not translate host name "host.docker.internal" to address: Temporary failure in name resolution
+; 16846)
+[2024-03-30T22:05:37.866+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-30T22:05:37.964+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

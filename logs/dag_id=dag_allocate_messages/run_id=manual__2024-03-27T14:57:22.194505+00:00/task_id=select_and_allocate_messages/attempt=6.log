@@ -1,0 +1,33 @@
+[2024-03-30T22:05:25.653+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.select_and_allocate_messages manual__2024-03-27T14:57:22.194505+00:00 [queued]>
+[2024-03-30T22:05:25.976+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.select_and_allocate_messages manual__2024-03-27T14:57:22.194505+00:00 [queued]>
+[2024-03-30T22:05:25.983+0000] {taskinstance.py:2193} INFO - Starting attempt 6 of 6
+[2024-03-30T22:05:26.240+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): select_and_allocate_messages> on 2024-03-27 14:57:22.194505+00:00
+[2024-03-30T22:05:26.345+0000] {standard_task_runner.py:60} INFO - Started process 16850 to run task
+[2024-03-30T22:05:26.360+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'select_and_allocate_messages', 'manual__2024-03-27T14:57:22.194505+00:00', '--job-id', '1117', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmp4z5_j4gj']
+[2024-03-30T22:05:26.407+0000] {standard_task_runner.py:88} INFO - Job 1117: Subtask select_and_allocate_messages
+[2024-03-30T22:05:27.046+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.select_and_allocate_messages manual__2024-03-27T14:57:22.194505+00:00 [running]> on host 932f824b7ebb
+[2024-03-30T22:05:28.408+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='select_and_allocate_messages' AIRFLOW_CTX_EXECUTION_DATE='2024-03-27T14:57:22.194505+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-27T14:57:22.194505+00:00'
+[2024-03-30T22:05:28.511+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-03-30T22:05:38.536+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_allocate_messages.py", line 13, in select_and_allocate_messages
+    conn = hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 161, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "host.docker.internal" to address: Temporary failure in name resolution
+
+[2024-03-30T22:05:38.574+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=dag_allocate_messages, task_id=select_and_allocate_messages, execution_date=20240327T145722, start_date=20240330T220525, end_date=20240330T220538
+[2024-03-30T22:05:38.642+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1117 for task select_and_allocate_messages (could not translate host name "host.docker.internal" to address: Temporary failure in name resolution
+; 16850)
+[2024-03-30T22:05:38.682+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-30T22:05:38.781+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
