@@ -1,0 +1,34 @@
+[2024-04-03T09:42:20.269+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_allocate_messages.delete_original_messages manual__2024-04-03T09:32:13.549866+00:00 [queued]>
+[2024-04-03T09:42:20.292+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_allocate_messages.delete_original_messages manual__2024-04-03T09:32:13.549866+00:00 [queued]>
+[2024-04-03T09:42:20.292+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 6
+[2024-04-03T09:42:20.321+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): delete_original_messages> on 2024-04-03 09:32:13.549866+00:00
+[2024-04-03T09:42:20.332+0000] {standard_task_runner.py:60} INFO - Started process 12788 to run task
+[2024-04-03T09:42:20.343+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_allocate_messages', 'delete_original_messages', 'manual__2024-04-03T09:32:13.549866+00:00', '--job-id', '1255', '--raw', '--subdir', 'DAGS_FOLDER/dag_allocate_messages.py', '--cfg-path', '/tmp/tmp7wrkcvv2']
+[2024-04-03T09:42:20.349+0000] {standard_task_runner.py:88} INFO - Job 1255: Subtask delete_original_messages
+[2024-04-03T09:42:20.443+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_allocate_messages.delete_original_messages manual__2024-04-03T09:32:13.549866+00:00 [running]> on host af8488263d95
+[2024-04-03T09:42:20.603+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='daniel' AIRFLOW_CTX_DAG_ID='dag_allocate_messages' AIRFLOW_CTX_TASK_ID='delete_original_messages' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T09:32:13.549866+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T09:32:13.549866+00:00'
+[2024-04-03T09:42:20.608+0000] {logging_mixin.py:188} INFO - delete original messages
+[2024-04-03T09:42:20.694+0000] {base.py:83} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-04-03T09:42:20.728+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dag_allocate_messages.py", line 152, in delete_original_messages
+    cursor.execute("DELETE FROM messages WHERE msg_id = {}".format(id))
+psycopg2.errors.SyntaxError: syntax error at or near "["
+LINE 1: DELETE FROM messages WHERE msg_id = ['2', '5']
+                                            ^
+
+[2024-04-03T09:42:20.749+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_allocate_messages, task_id=delete_original_messages, execution_date=20240403T093213, start_date=20240403T094220, end_date=20240403T094220
+[2024-04-03T09:42:20.783+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1255 for task delete_original_messages (syntax error at or near "["
+LINE 1: DELETE FROM messages WHERE msg_id = ['2', '5']
+                                            ^
+; 12788)
+[2024-04-03T09:42:20.837+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-03T09:42:20.872+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
