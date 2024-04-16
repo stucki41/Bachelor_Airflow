@@ -11,35 +11,6 @@ default_args = {"owner": "daniel", "retries": 5, "retry_delay": timedelta(minute
 hook = PostgresHook(postgres_conn_id="postgres_localhost")
 
 
-def select_and_allocate_messages():
-    conn = hook.get_conn()
-    cursor = conn.cursor()
-    cursor.execute("select * from messages")
-
-    messages = cursor.fetchall()
-    for message in messages:
-        type = message[4]
-        if type == "success":
-            insert_message(cursor, "success_messages", message)
-            print(f"insert success ID: {message[0]}")
-        elif type == "warning":
-            insert_message(cursor, "warning_messages", message)
-            print(f"insert warning ID: {message[0]}")
-        elif type == "error":
-            insert_message(cursor, "error_messages", message)
-            print(f"insert error ID: {message[0]}")
-        else:
-            print("Error Log")
-
-        print(f"id: {message[0]}, type: {message[4]}")
-
-    conn.commit()
-    cursor.close()
-    conn.close()
-
-    print("saved all messages")
-
-
 def insert_message(cursor, table, message):
     cursor.execute(
         f"INSERT INTO {table} (msg_id, msg_date, msg_time, message) VALUES( %s, %s, %s, %s ) ON CONFLICT DO NOTHING",
